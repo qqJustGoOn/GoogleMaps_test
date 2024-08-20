@@ -223,7 +223,7 @@ input[type=search]::-webkit-search-results-decoration {
   top: 100%;
   left: 50%;
   translate: -55%;
-  background-image: url(../../img/markers/arrow-down.svg);
+  background-image: url(../img/markers/arrow-down.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
