@@ -1,0 +1,46 @@
+.g-map {
+  &__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -moz-column-gap: 8px;
+    -webkit-column-gap: 8px;
+    column-gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    color: var(--color-dark);
+  }
+
+  &__body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.map {
+  min-height: 560px;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(174, 169, 169);
+  border-radius: 16px;
+  position: relative;
+  z-index: 50;
+
+  @include mobile {
+    min-height: 360px;
+  }
+}
+
+.gmnoprint,
+.gm-style-cc {
+  display: none !important;
+}

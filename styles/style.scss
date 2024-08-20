@@ -1,0 +1,34 @@
+@import "_normalize.scss", "_fonts.scss", "_mixins.scss", "_variables.scss",
+  "_media.scss";
+
+@import "./blocks/marker", "./blocks/g-map", "blocks/control-panel";
+
+body {
+  font-family: var(--font-family);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1;
+  background-color: var(--color-white);
+
+  @include mobile {
+    font-size: 13px;
+  }
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+  padding-block: 48px;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+//скрываем элемент на моб. устройствах
+.hidden-mobile {
+  @include mobile-s {
+    display: none !important;
+  }
+}

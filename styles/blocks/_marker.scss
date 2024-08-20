@@ -1,0 +1,111 @@
+.marker {
+  background-color: var(--bg-color);
+  border: var(--border);
+
+  &-big {
+    padding: 8px;
+    padding-right: 10px;
+    color: var(--color-white);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 4px;
+    -moz-column-gap: 4px;
+    column-gap: 4px;
+    max-width: 216px;
+    border-radius: var(--border-radius);
+    letter-spacing: -0.01em;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(26, 35, 31, 0.16);
+    box-shadow: 0 4px 8px 0 rgba(26, 35, 31, 0.16);
+    position: relative;
+
+    &__icon {
+      fill: transparent;
+      stroke-width: 1.6px;
+      width: 20px;
+      height: 20px;
+
+      svg {
+        width: inherit;
+        height: inherit;
+      }
+    }
+
+    &__title {
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    &__dot {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+    }
+
+    &::after {
+      width: 44px;
+      height: 10px;
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      //   rotate: 45deg;
+      //   background-color: var(--bg-color);
+      //   border: var(--border);
+      //   border-bottom-right-radius: 34px;
+      //   -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+      //   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+      translate: -55%;
+      background-image: url(../../img/markers/arrow-down.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &-small {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 4px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    &__icon {
+      width: 12px;
+      height: 12px;
+      fill: transparent;
+      stroke-width: 1.2px;
+
+      svg {
+        width: inherit;
+        height: inherit;
+      }
+    }
+  }
+
+  &__descr {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2;
+    color: var(--color-main);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 4px;
+    -moz-column-gap: 4px;
+    column-gap: 4px;
+  }
+}
